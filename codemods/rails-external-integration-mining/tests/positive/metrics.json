@@ -1,0 +1,44 @@
+{
+  "rails-external-integration": [
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "integrationKind": "faraday",
+        "line": "7",
+        "risk": "medium",
+        "snippet": "Faraday.new(url: \"https://api.example\")"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "integrationKind": "httparty",
+        "line": "3",
+        "risk": "medium",
+        "snippet": "HTTParty.post(\"https://payments.example/charge\", body: payload)"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "integrationKind": "net-http",
+        "line": "16",
+        "risk": "medium",
+        "snippet": "Net::HTTP.get(URI(\"https://example.com\"))"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "integrationKind": "restclient",
+        "line": "12",
+        "risk": "medium",
+        "snippet": "RestClient.get(\"https://legacy.example/ping\")"
+      },
+      "count": 1
+    }
+  ]
+}

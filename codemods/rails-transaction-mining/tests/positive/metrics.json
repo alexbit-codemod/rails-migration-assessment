@@ -1,0 +1,34 @@
+{
+  "rails-transaction": [
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "14",
+        "risk": "high",
+        "snippet": "lock!",
+        "transactionKind": "lock!"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "3",
+        "risk": "critical",
+        "snippet": "ActiveRecord::Base.transaction do from.with_lock do from.update!(balance: from.balance - amount) to.update!(balance: to.",
+        "transactionKind": "transaction"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "4",
+        "risk": "critical",
+        "snippet": "from.with_lock do from.update!(balance: from.balance - amount) to.update!(balance: to.balance + amount) end",
+        "transactionKind": "with_lock"
+      },
+      "count": 1
+    }
+  ]
+}

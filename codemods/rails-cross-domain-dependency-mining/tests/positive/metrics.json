@@ -1,0 +1,26 @@
+{
+  "rails-cross-domain-dependency": [
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "4",
+        "snippet": "Notifications::Delivery",
+        "sourceDomain": "Boards",
+        "targetConstant": "Notifications::Delivery",
+        "targetDomain": "Notifications"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "5",
+        "snippet": "Search::Indexer",
+        "sourceDomain": "Boards",
+        "targetConstant": "Search::Indexer",
+        "targetDomain": "Search"
+      },
+      "count": 1
+    }
+  ]
+}

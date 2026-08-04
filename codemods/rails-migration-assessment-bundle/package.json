@@ -1,0 +1,11 @@
+{
+  "name": "rails-migration-assessment-bundle",
+  "version": "0.1.2",
+  "description": "Workflow bundle that runs all Rails migration assessment mining codemods in one pass",
+  "type": "module",
+  "scripts": {
+    "test": "npx -y codemod@latest workflow validate --workflow ./workflow.yaml && npx -y codemod@latest workflow validate --workflow ./workflow.local.yaml",
+    "test:workflow": "npx -y codemod@latest workflow run -w ./workflow.local.yaml -t ./smoke/sample-repo --allow-dirty --no-interactive",
+    "test:workflow:published": "npx -y codemod@latest workflow run -w . -t ./smoke/sample-repo --allow-dirty --no-interactive"
+  }
+}

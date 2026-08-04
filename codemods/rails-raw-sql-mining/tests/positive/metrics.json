@@ -1,0 +1,54 @@
+{
+  "rails-raw-sql": [
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "11",
+        "risk": "high",
+        "snippet": "Arel.sql(\"LOWER(name)\")",
+        "sqlKind": "arel_sql"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "11",
+        "risk": "high",
+        "snippet": "order(Arel.sql(\"LOWER(name)\"))",
+        "sqlKind": "order_string"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "15",
+        "risk": "high",
+        "snippet": "ActiveRecord::Base.connection.execute(\"UPDATE accounts SET balance = 0\")",
+        "sqlKind": "execute"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "3",
+        "risk": "high",
+        "snippet": "find_by_sql([\"SELECT * FROM users WHERE name LIKE ?\", \"%#{q}%\"])",
+        "sqlKind": "find_by_sql"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "7",
+        "risk": "high",
+        "snippet": "where(\"active = 1 AND deleted_at IS NULL\")",
+        "sqlKind": "where_string"
+      },
+      "count": 1
+    }
+  ]
+}

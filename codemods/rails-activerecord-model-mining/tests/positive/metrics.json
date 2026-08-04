@@ -1,0 +1,37 @@
+{
+  "rails-activerecord-model": [
+    {
+      "cardinality": {
+        "baseClass": "ActiveRecord::Base",
+        "className": "LegacyPost",
+        "file": "input.rb",
+        "line": "7",
+        "pathKind": "other",
+        "snippet": "class LegacyPost < ActiveRecord::Base end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "baseClass": "ApplicationRecord",
+        "className": "Invoice",
+        "file": "input.rb",
+        "line": "11",
+        "pathKind": "other",
+        "snippet": "class Invoice < ApplicationRecord end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "baseClass": "ApplicationRecord",
+        "className": "User",
+        "file": "input.rb",
+        "line": "1",
+        "pathKind": "other",
+        "snippet": "class User < ApplicationRecord def full_name \"#{first_name} #{last_name}\" end end"
+      },
+      "count": 1
+    }
+  ]
+}

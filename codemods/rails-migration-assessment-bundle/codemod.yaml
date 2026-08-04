@@ -1,0 +1,35 @@
+schema_version: '1.0'
+
+name: 'rails-migration-assessment-bundle'
+version: '0.1.2'
+description: >-
+  Read-only workflow bundle that runs all Rails migration assessment miners in
+  one pass (models, associations, callbacks, validations, STI, SQL, transactions,
+  controllers, serializers, services, jobs, Redis, external integrations,
+  request tests, cross-domain deps, shared tables). Destination-agnostic
+  inventory for extraction, modularization, and modernization planning.
+author: 'Alex Bit <alex@codemod.com>'
+license: 'MIT'
+workflow: 'workflow.yaml'
+category: 'analysis'
+
+targets:
+  languages: ['ruby']
+
+keywords:
+  - 'mining'
+  - 'metrics'
+  - 'rails'
+  - 'ruby'
+  - 'migration-assessment'
+  - 'modularization'
+  - 'extraction'
+  - 'bundle'
+  - 'recipe'
+
+registry:
+  access: 'pro'
+  visibility: 'public'
+
+
+capabilities: []

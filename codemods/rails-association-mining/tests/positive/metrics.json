@@ -1,0 +1,56 @@
+{
+  "rails-association": [
+    {
+      "cardinality": {
+        "associationType": "belongs_to",
+        "className": "User",
+        "file": "input.rb",
+        "line": "3",
+        "name": "account",
+        "polymorphic": "yes",
+        "risk": "high",
+        "snippet": "belongs_to :account, polymorphic: true"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "associationType": "has_and_belongs_to_many",
+        "className": "User",
+        "file": "input.rb",
+        "line": "5",
+        "name": "tags",
+        "polymorphic": "no",
+        "risk": "low",
+        "snippet": "has_and_belongs_to_many :tags"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "associationType": "has_many",
+        "className": "User",
+        "file": "input.rb",
+        "line": "2",
+        "name": "posts",
+        "polymorphic": "no",
+        "risk": "low",
+        "snippet": "has_many :posts, dependent: :destroy"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "associationType": "has_one",
+        "className": "User",
+        "file": "input.rb",
+        "line": "4",
+        "name": "profile",
+        "polymorphic": "no",
+        "risk": "low",
+        "snippet": "has_one :profile"
+      },
+      "count": 1
+    }
+  ]
+}

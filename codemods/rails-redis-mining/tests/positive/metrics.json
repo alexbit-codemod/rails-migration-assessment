@@ -1,0 +1,44 @@
+{
+  "rails-redis": [
+    {
+      "cardinality": {
+        "clientHint": "global",
+        "file": "input.rb",
+        "line": "11",
+        "operation": "incr",
+        "snippet": "REDIS.incr(\"visits\")"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "clientHint": "global",
+        "file": "input.rb",
+        "line": "3",
+        "operation": "get",
+        "snippet": "$redis.get(\"user:#{id}\")"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "clientHint": "redis-rb",
+        "file": "input.rb",
+        "line": "7",
+        "operation": "set",
+        "snippet": "Redis.current.set(\"user:#{id}\", payload)"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "clientHint": "sidekiq",
+        "file": "input.rb",
+        "line": "15",
+        "operation": "sidekiq_redis_block",
+        "snippet": "Sidekiq.redis { |r| r.get(\"lock\") }"
+      },
+      "count": 1
+    }
+  ]
+}

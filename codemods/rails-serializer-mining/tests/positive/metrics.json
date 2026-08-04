@@ -1,0 +1,34 @@
+{
+  "rails-serializer": [
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "framework": "active_model_serializers",
+        "line": "1",
+        "serializerClass": "UserSerializer",
+        "snippet": "class UserSerializer < ActiveModel::Serializer attributes :id, :email end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "framework": "alba",
+        "line": "5",
+        "serializerClass": "PostResource",
+        "snippet": "class PostResource include Alba::Resource attributes :id, :title end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "framework": "blueprinter",
+        "line": "10",
+        "serializerClass": "AccountBlueprint",
+        "snippet": "class AccountBlueprint < Blueprinter::Base identifier :id fields :name end"
+      },
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "rails-sti": [
+    {
+      "cardinality": {
+        "className": "Car",
+        "file": "input.rb",
+        "line": "5",
+        "parentClass": "Vehicle",
+        "risk": "critical",
+        "snippet": "class Car < Vehicle end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "className": "Truck",
+        "file": "input.rb",
+        "line": "8",
+        "parentClass": "Vehicle",
+        "risk": "critical",
+        "snippet": "class Truck < Vehicle end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "className": "Vehicle",
+        "file": "input.rb",
+        "line": "1",
+        "parentClass": "ApplicationRecord",
+        "risk": "critical",
+        "snippet": "class Vehicle < ApplicationRecord self.inheritance_column = :type end"
+      },
+      "count": 1
+    }
+  ]
+}

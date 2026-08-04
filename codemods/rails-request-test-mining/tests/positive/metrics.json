@@ -1,0 +1,24 @@
+{
+  "rails-request-test": [
+    {
+      "cardinality": {
+        "describeTarget": "Posts API",
+        "file": "input.rb",
+        "line": "10",
+        "snippet": "post \"/posts\", params: { post: { title: \"Hi\" } }",
+        "testKind": "request"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "describeTarget": "Posts API",
+        "file": "input.rb",
+        "line": "5",
+        "snippet": "get \"/posts\"",
+        "testKind": "request"
+      },
+      "count": 1
+    }
+  ]
+}

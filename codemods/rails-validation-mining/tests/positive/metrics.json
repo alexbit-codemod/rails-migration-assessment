@@ -1,0 +1,40 @@
+{
+  "rails-validation": [
+    {
+      "cardinality": {
+        "attributes": "email",
+        "className": "User",
+        "file": "input.rb",
+        "line": "2",
+        "risk": "medium",
+        "snippet": "validates :email, presence: true, uniqueness: true",
+        "validationKind": "validates"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "attributes": "name",
+        "className": "User",
+        "file": "input.rb",
+        "line": "3",
+        "risk": "medium",
+        "snippet": "validates_length_of :name, maximum: 80",
+        "validationKind": "validates_length_of"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "attributes": "password_complexity",
+        "className": "User",
+        "file": "input.rb",
+        "line": "4",
+        "risk": "medium",
+        "snippet": "validate :password_complexity",
+        "validationKind": "validate"
+      },
+      "count": 1
+    }
+  ]
+}

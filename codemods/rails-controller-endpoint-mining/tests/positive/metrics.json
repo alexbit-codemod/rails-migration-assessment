@@ -1,0 +1,26 @@
+{
+  "rails-controller-endpoint": [
+    {
+      "cardinality": {
+        "action": "create",
+        "controller": "PostsController",
+        "file": "input.rb",
+        "line": "6",
+        "pathKind": "other",
+        "snippet": "def create Post.create!(post_params) end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "action": "index",
+        "controller": "PostsController",
+        "file": "input.rb",
+        "line": "2",
+        "pathKind": "other",
+        "snippet": "def index @posts = Post.all end"
+      },
+      "count": 1
+    }
+  ]
+}

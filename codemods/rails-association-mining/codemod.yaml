@@ -1,0 +1,26 @@
+schema_version: "1.0"
+
+name: "rails-association-mining"
+version: '0.1.2'
+description: "Mine ActiveRecord associations including polymorphic for Rails migration assessment"
+author: "Alex Bit <alex@codemod.com>"
+license: "MIT"
+
+
+targets:
+  # Keep this aligned with the files matched in workflow.yaml.
+  languages: ["ruby"]
+
+keywords: ["mining", "metrics", "rails", "ruby", "migration-assessment"]
+
+registry:
+  access: 'pro'
+  visibility: 'public'
+
+
+capabilities: []
+
+workflows:
+  - name: main
+    default: true
+    path: workflow.yaml

@@ -1,0 +1,37 @@
+{
+  "rails-shared-table": [
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "2",
+        "modelOrMigration": "LegacyUser",
+        "signalKind": "table_name_override",
+        "snippet": "self.table_name = \"legacy_users\"",
+        "tableName": "legacy_users"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "7",
+        "modelOrMigration": "CreateUsers",
+        "signalKind": "create_table",
+        "snippet": "create_table :users do |t| t.references :account t.timestamps end",
+        "tableName": "users"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "file": "input.rb",
+        "line": "8",
+        "modelOrMigration": "CreateUsers",
+        "signalKind": "references",
+        "snippet": "t.references :account",
+        "tableName": "account"
+      },
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "rails-activerecord-model-mining",
+  "version": "0.1.2",
+  "description": "Mine ActiveRecord model class declarations for Rails migration assessment",
+  "type": "module",
+  "scripts": {
+    "test": "npx -y codemod@latest jssg test -l ruby ./scripts/codemod.ts ./tests",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@codemod.com/jssg-types": "catalog:",
+    "typescript": "catalog:"
+  }
+}

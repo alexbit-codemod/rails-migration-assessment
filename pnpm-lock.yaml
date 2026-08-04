@@ -1,0 +1,180 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+catalogs:
+  default:
+    '@codemod.com/jssg-types':
+      specifier: ^1.5.1
+      version: 1.6.3
+    typescript:
+      specifier: ^5.8.3
+      version: 5.9.3
+
+importers:
+
+  .: {}
+
+  codemods/rails-activerecord-model-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-association-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-background-job-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-callback-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-controller-endpoint-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-cross-domain-dependency-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-external-integration-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-migration-assessment-bundle: {}
+
+  codemods/rails-raw-sql-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-redis-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-request-test-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-serializer-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-service-object-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-shared-table-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-sti-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-transaction-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  codemods/rails-validation-mining:
+    devDependencies:
+      '@codemod.com/jssg-types':
+        specifier: 'catalog:'
+        version: 1.6.3
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+packages:
+
+  '@codemod.com/jssg-types@1.6.3':
+    resolution: {integrity: sha512-b5829ixO5TdGL5xg5YcL9YfiLC3WwFZU+8Zx78NpsHlJ1iySbqfA0g0psqNXv8ss/r7hdpy2KiBXm3GE6bN5bQ==}
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@codemod.com/jssg-types@1.6.3': {}
+
+  typescript@5.9.3: {}

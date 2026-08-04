@@ -1,0 +1,14 @@
+{
+  "name": "rails-migration-assessment",
+  "private": true,
+  "description": "Read-only Codemod mining suite for Rails estate inventory and migration readiness assessment.",
+  "scripts": {
+    "test": "pnpm -r --filter './codemods/*' test",
+    "check-types": "pnpm -r --filter './codemods/*' check-types",
+    "test:bundle": "pnpm --filter rails-migration-assessment-bundle test:workflow"
+  },
+  "packageManager": "pnpm@10.19.0",
+  "engines": {
+    "node": ">=22"
+  }
+}

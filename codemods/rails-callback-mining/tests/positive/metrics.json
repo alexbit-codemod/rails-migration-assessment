@@ -1,0 +1,52 @@
+{
+  "rails-callback": [
+    {
+      "cardinality": {
+        "callbackType": "after_commit",
+        "className": "User",
+        "file": "input.rb",
+        "line": "4",
+        "risk": "high",
+        "snippet": "after_commit :sync_external, on: :create",
+        "target": "sync_external"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "callbackType": "after_create",
+        "className": "User",
+        "file": "input.rb",
+        "line": "3",
+        "risk": "high",
+        "snippet": "after_create :send_welcome",
+        "target": "send_welcome"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "callbackType": "before_destroy",
+        "className": "User",
+        "file": "input.rb",
+        "line": "5",
+        "risk": "high",
+        "snippet": "before_destroy { soft_delete! }",
+        "target": "block"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "callbackType": "before_save",
+        "className": "User",
+        "file": "input.rb",
+        "line": "2",
+        "risk": "high",
+        "snippet": "before_save :normalize_email",
+        "target": "normalize_email"
+      },
+      "count": 1
+    }
+  ]
+}

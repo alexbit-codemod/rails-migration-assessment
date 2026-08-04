@@ -1,0 +1,37 @@
+{
+  "rails-service-object": [
+    {
+      "cardinality": {
+        "className": "ChargeCustomer",
+        "entryMethod": "perform",
+        "file": "input.rb",
+        "line": "14",
+        "pathKind": "other",
+        "snippet": "class ChargeCustomer < ApplicationService def perform(invoice) invoice.charge! end end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "className": "CreateUserService",
+        "entryMethod": "self.call",
+        "file": "input.rb",
+        "line": "1",
+        "pathKind": "other",
+        "snippet": "class CreateUserService def self.call(attrs) User.create!(attrs) end end"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "className": "NotifyUserInteractor",
+        "entryMethod": "call",
+        "file": "input.rb",
+        "line": "7",
+        "pathKind": "other",
+        "snippet": "class NotifyUserInteractor def call(user) user.notify! end end"
+      },
+      "count": 1
+    }
+  ]
+}

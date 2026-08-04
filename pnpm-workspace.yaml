@@ -1,0 +1,5 @@
+packages:
+  - 'codemods/*'
+catalog:
+  '@codemod.com/jssg-types': '^1.5.1'
+  typescript: '^5.8.3'

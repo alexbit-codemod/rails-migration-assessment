@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/codemod/codemod/refs/heads/main/schemas/workflow.json
+
+version: '1'
+
+nodes:
+  - id: mine-sti
+    name: Mine ActiveRecord STI
+    type: automatic
+    steps:
+      - name: 'Scan Ruby files (read-only; emits metrics)'
+        js-ast-grep:
+          js_file: scripts/codemod.ts
+          language: 'ruby'
+          include:
+            - '**/*.rb'
+          exclude:
+            - '**/node_modules/**'
+            - '**/vendor/**'
+            - '**/dist/**'
+            - '**/build/**'
+            - '**/.git/**'

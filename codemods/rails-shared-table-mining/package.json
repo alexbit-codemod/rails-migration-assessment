@@ -1,0 +1,14 @@
+{
+  "name": "rails-shared-table-mining",
+  "version": "0.1.2",
+  "description": "Mine shared database table signals for Rails migration assessment",
+  "type": "module",
+  "scripts": {
+    "test": "npx -y codemod@latest jssg test -l ruby ./scripts/codemod.ts ./tests",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@codemod.com/jssg-types": "catalog:",
+    "typescript": "catalog:"
+  }
+}

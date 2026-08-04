@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/codemod/codemod/refs/heads/main/schemas/workflow.json
+
+version: '1'
+
+nodes:
+  - id: rails-migration-assessment-bundle
+    name: 'Rails migration assessment (full mining bundle)'
+    type: automatic
+    steps:
+      - name: '1. ActiveRecord models'
+        codemod:
+          source: 'rails-activerecord-model-mining'
+
+      - name: '2. Associations'
+        codemod:
+          source: 'rails-association-mining'
+
+      - name: '3. Callbacks'
+        codemod:
+          source: 'rails-callback-mining'
+
+      - name: '4. Validations'
+        codemod:
+          source: 'rails-validation-mining'
+
+      - name: '5. Single-table inheritance'
+        codemod:
+          source: 'rails-sti-mining'
+
+      - name: '6. Raw SQL'
+        codemod:
+          source: 'rails-raw-sql-mining'
+
+      - name: '7. Transactions'
+        codemod:
+          source: 'rails-transaction-mining'
+
+      - name: '8. Controller endpoints'
+        codemod:
+          source: 'rails-controller-endpoint-mining'
+
+      - name: '9. Serializers'
+        codemod:
+          source: 'rails-serializer-mining'
+
+      - name: '10. Service objects'
+        codemod:
+          source: 'rails-service-object-mining'
+
+      - name: '11. Background jobs'
+        codemod:
+          source: 'rails-background-job-mining'
+
+      - name: '12. Redis usage'
+        codemod:
+          source: 'rails-redis-mining'
+
+      - name: '13. External integrations'
+        codemod:
+          source: 'rails-external-integration-mining'
+
+      - name: '14. Request tests'
+        codemod:
+          source: 'rails-request-test-mining'
+
+      - name: '15. Cross-domain dependencies'
+        codemod:
+          source: 'rails-cross-domain-dependency-mining'
+
+      - name: '16. Shared tables'
+        codemod:
+          source: 'rails-shared-table-mining'
